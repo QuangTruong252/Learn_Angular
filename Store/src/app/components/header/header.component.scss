@@ -1,0 +1,19 @@
+@use "../../scss/mixin" as m;
+.site-navbar {
+    .container {
+        @include m.flex(center, space-between)
+    }
+    .logo {
+        img {
+            width: 80px;
+        }
+    }
+    .main-nav {
+        .site-menu {
+            list-style: none;
+            &_item {
+                padding: 15px 5px;
+            }
+        }
+    }
+}
